@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+:root{
+    --color-white: hsl(252, 30%, 100%);
+    --color-black: hsl(160, 29%, 10%);
+    --color-sucess: hsl(120, 95%, 65%);
+    --color-ligth: hsl(106, 100%, 95%);
+    --color-gray: hsl(122, 15%, 65%);
+    --color-primary: hsl(117, 82%, 56%);
+    --color-danger: hsl(0, 95%, 65%);
+    --color-secondary: hsl(132, 100%, 90%);
+    --color-dark: hsl(252, 42%, 9%);
+    --color-middle: hsl(138, 44%, 16%);
+    --color-green: hsl(117, 55%, 65%);
+
+    --border-radius: 2rem;
+    --card-boder-radius: 1rem;
+    --bnt-padding: 0.6rem 2rem;
+    --serach-padding: 0.6rem 1rem;
+    --card-padding: 1rem;
+
+    --sticky-top-left: 5.4rem;
+    --sticky-top-rigth:-18rem;
+}
+*,
+*::before, 
+*::after{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+}
+body{
+    font-family: "Poppins", sans-serif ;
+    color: var(--color-white);
+    background: var(--color-dark);
+    overflow-x: hidden;
+    
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+.profile-photo{
+    width: 2.7rem;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+}
+img{
+    display: block ;
+    width: 100%;
+}
+.bnt{
+    display: inline-block;
+    padding: var(--bnt-padding);
+    font-weight: 500;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: all 300ms ease;
+    font-size: 0.9rem;
+
+
+}
+.bnt:hover{
+    opacity: 0.8;
+}
+.bnt-primary{
+    background: var(--color-primary);
+    color: white;
+}
+.text-bold{
+    font-weight: 500;
+}
+.text-muted{
+    color: var(--color-dark);
+}
+
+nav{
+    width: 100%;
+    background: linear-gradient(-45deg, #10972e, #44e4bc, #10972e);
+    padding: 0.7rem 0;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+nav .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+nav .search-bar{
+background: var(--color-ligth);
+border-radius:  var(--border-radius);
+padding: var(--serach-padding);
+}
+nav .search-bar input[type="search"]{
+    background:  transparent;
+    width: J0vw;
+    margin-left: 1rem;
+    font-size: 0.9rem;
+    color: var(--color-dark);
+
+}
+nav .search-bar input[type="search"]::placeholder{
+    color: var(--color-gray);
+}
+
+nav .create{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.scroll{
+    width: 80%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+
+  }
+  
+  .cover{
+    width: 90%;
+    position: relative;
+    height: 50%;
+  }
+
+  .scroll-images{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    overflow: auto;
+    position: relative;
+    scroll-behavior: smooth;
+
+  
+  }
+  .child{
+    min-width: 280px;
+    height: 180px;
+    margin: 1px 10px;
+    margin-top: 90px;
+    cursor: pointer;
+    border: 3px solid #00ff7f;
+    overflow: hidden;
+
+  }
+  .child-image{
+    width: 100%;
+    height: 100%;
+    
+  }
+  .scroll-images::-webkit-scrollbar{
+    -webkit-appearance: none;
+
+  }
+  .swiper{
+    width: auto;
+    height: 40vh;
+  }
+  .swiper-button{
+    margin-top: 100%;
+  }
+  .card{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .container-card{
+      width: 100%;
+      position: relative;
+      height: 50%;
+    }
+    .card-play{
+      width: 102%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      position: relative;
+     
+    }
+    .play{
+      min-width: 260px;
+      height: 240px;
+      margin: 10px 10px;
+      margin-top: 15px;
+      cursor: pointer;
+    
+      overflow: hidden;
+    
+      
+  
+    }
+    .play-thumb{
+      width: 100%;
+      height: 100%;
+    }
+    .trailer{
+      margin: 3%;
+      position: center;
+    }
+     .trailer1{
+    margin-left: 20%;
+    margin-top: 50px;
+      color: #f1f2f6;
+      background-color: #1bd637;
+      border-radius:50px ;
+     padding: 10px 20px;
+    }
+    .trailer2{
+      margin-left: 25%;
+      margin-top: 20px;
+        color: #f1f2f6;
+        background-color: #1bd637;
+        border-radius:50px ;
+       padding: 10px 20px;
+      }
+      .trailer3{
+        margin-left: 80%;
+         margin-top: 20px;
+          color: #f1f2f6;
+          background-color: #1bd637;
+          border-radius:50px ;
+         padding: 10px 20px;
+        }
+         p{
+          color: white;
+         }
+       
+

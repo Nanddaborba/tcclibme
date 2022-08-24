@@ -1,0 +1,171 @@
+<html>
+    <html lang="pt-br">    
+
+    <meta> 
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-widht, initti"> 
+<title>Login</title>
+
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&disply=swap');
+*{margin:0;padding:0;box-sizing: border-box;}
+
+
+body{
+
+     width: 100%;
+     height: 100vh;
+     font-family: 'poppins', sans-serif;
+     background: #030416;
+     
+}
+
+   
+
+
+ .form-control.error input{
+    border: 3px solid #f41010;
+ } 
+ .form-control.error  i .img-error{
+  visibility: visible;
+ }
+ .form-control small{
+    visibility: hidden;
+    color: #ff1616;
+ }
+
+     form{
+        padding: 20px;
+        max-width: 400px;
+        color: rgb(253, 250, 250);
+        top: 50%;
+        left: 40%;
+        margin: 0 auto;
+        height: 55%;
+        border-radius: 10px;
+        background: linear-gradient(-45deg, #10972e, #44e4bc, #10972e);
+      }
+
+      form{
+
+        margin-top: 150px;
+        margin-bottom: 120px;
+        border-radius: 20px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+
+        form h1{
+      text-align: center;
+      color: #fcf9f9;
+      font-family: 'poppins', sans-serif;
+      }
+
+     form input[type=text],
+     form input[type=password]{
+         width:100%;
+        height: 45px;
+         border: 2px solid rgb(15, 191, 103);
+         border-radius: 20px 20px;
+         padding-left: 10px;
+         margin: 10px 0px;
+         background-color: rgb(255, 255, 255);
+     }
+     
+     form input[type=submit]{
+      width: 100%;
+      height: 40px;
+      margin-top: 10%;
+      cursor: pointer;
+      background: #14ad35;
+      color: rgb(255, 255, 255);
+      border: 0;
+     border-radius: 20px 40px;
+      transition: 4%;
+      font-size: medium;
+    }
+
+     form input[type=submit]:hover{
+        background-color:rgb(16, 251, 137);
+        color: #030416;
+    }
+   .errorInput{
+    border: 3px solid #f41010 !important;
+
+   }
+   .content .imgBox1{
+ margin-top: auto;
+
+}
+.content .imgBox1 img{
+ width:350px;   
+ margin-top: 80px; 
+ max-width: 400px;
+float: left;
+}
+.content .imgBox2{
+ margin-top: auto;
+ 
+
+}
+.content .imgBox2 img{
+ width:560px; 
+ margin-top: 50px; 
+ max-width: 600px;
+float: right;
+}
+    
+</style> 
+
+<body>
+    <div class="content">
+    <div class="imgBox1">
+             
+        <img src="login.jpg" class="Anime1">
+  
+   
+        
+    </div>
+    <div class="imgBox2">
+             
+        <img src="login2.jpg" class="Anime1">
+  
+   
+        
+    </div>
+<form class="form" id="form">
+    <div class="form-control">
+     
+
+    <label for="email"></label><br>
+    <h4>Usuário:</h4>
+    <input type="text" id="email" nome="Usuário ou Email" placeholder="Digite seu e-mail..."/>
+   
+
+    
+
+
+    <label for="senha"></label><br>
+    <h4>Senha:</h4>
+    <input type="password" id="password" nome="Senha" placeholder="Digite sua senha...">
+    
+
+
+   
+</div>
+    <a href="perfilteste.html">
+        <input type="submit" id="button" value="Entrar" onclick="return validar()">
+      </a>
+    
+  </form>
+</div>
+  <script src=index.js></script>
+  
+  </body>
+  </html>
